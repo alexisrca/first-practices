@@ -1,0 +1,45 @@
+img[alt] {
+  border-radius: 50%;
+}
+
+h1 {
+  color: rgb(36, 129, 216);
+}
+
+h3 {
+  color: rgb(101, 163, 101);
+}
+
+p {
+  color: blueviolet;
+}
+
+.bulldogy {
+  height: auto;
+  width: 300px;
+  border-color: #83b0f7 !important;
+  border: solid;
+  border-width: 5px;
+}
+
+.pizza {
+  border: 10px;
+  border-style: solid dashed;
+  border-color: #f5768f;
+}
+
+div {
+  background-color: blueviolet;
+}
+
+.thunder {
+  margin: 30%;
+  background-color: green;
+  border-width: 20px;
+  border-color: white;
+  border-style: solid;
+}
+
+[type="radio"] {
+  margin: 5px;
+}

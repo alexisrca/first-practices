@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>My First Webpage</title>
+    <!--we use <link> self-closing tag to add a style sheet to our HTML file. "rel" attribute is used to establish the relationship between the <link> tag and the file-->
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Hello Fellas!</h1>
+    
+    <!--la etiqueta main te sirve para identificar la parte principal de una pagina HTML, esto no se mostrara en la pagina web, pero si sera visible para un desarrollador-->
+    <main>
+    
+    <p>We're gonna practice some HTML. Be prepared...</p>
+    
+    <a href="#parrafo-1">Parrafo 1</a>
+    <a href="#parrafo-2">Parrafo 2</a>
+
+    <!--<hr> self-closing tag adds an horizontal line-->
+    <hr>
+    
+    <h3><em>LOREM IPSUM</em></h3>
+    
+    <!--Con Alt + Z puedes adaptar el tamaño del texto a tu ventana, por ejemplo en un parrafo que sea bastante largo-->
+    <!--Seleccionando cualquier elemento y utilizando Ctrl + / podemos hacer que se convierta en comentario-->
+    
+    <p id="parrafo-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. <strong>Quidem harum ducimus</strong> temporibus enim beatae rerum ad dolore libero <i>ipsam aliquid natus</i>, ea <a href="file:///D:/Users/aramirez/Documents/Alexis/WB/The%20Odin%20Project/html-boilerplate/Lists.html" target="_blank" rel="noopener noreferrer">accusamus aliquam</a>, modi dicta, assumenda possimus <b>laborum perspiciatis!</b></p>
+    
+    <!--con target="" incrustado dentro de <a> y agregando _blank dentro hace que al hacer clic en el enlace lo abra en una ventana nueva. Agregar rel="noopener noreferrer" nos ayuda a evitar el tabnabbing y prevenir ataques-->
+    
+    <div>
+      <a href="file:///D:/Users/aramirez/Documents/Alexis/WB/The%20Odin%20Project/html-boilerplate/Lists.html" target="_blank" rel="noopener noreferrer"><img class="bulldogy" src="https://m.media-amazon.com/images/I/81OFuFL8yEL.jpg" alt="French Bulldog"></a>
+    </div>
+
+    <!--alt="" dentro de la etiqueta img, nos ayuda a colocar un comentario para en caso de que la imagen no cargue, se muestre dicho comentario-->
+    
+    <div>
+      <a href="#"><img class="pizza" src="Images/pizza.jpg" alt="Pizza lover"></a>
+    </div>
+    
+    <!--Adding # in the opening tag attribute, we can put a dead link-->
+    
+    <div>
+      <img class="thunder" src="https://www.theodinproject.com/mstile-310x310.png" alt="Odin">
+    </div>
+
+    <!--When use <s> tag around any word or pharagraph you can strikethrough them-->
+
+    <p id="parrafo-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere asperiores reprehenderit ipsum, eius qui quas culpa laudantium magnam et illo officiis. Totam quo tempora minus architecto <s>distinctio</s> corrupti rem quibusdam?</p>    
+  
+  <form action="send-answer">    
+    <!--RADIO BUTTONS-->
+    <!--<label> tag and type can be linked through an id attribute and writing attribute for in <label> opening tag (it must be through the same name we write in id)-->
+    <!--"name" attribute is used to group the type if we want to select just one option and "checked" attribute is used to select a default option. "value" attribute is used to store a value that we select over the options that we provide-->
+    <label for="interior"><input id="interior" type="radio" value="interior" name="interior-exterior" checked>Interior</label>
+    <label for="exterior"><input id="exterior" type="radio" value="exterior" name="interior-exterior">Exterior</label>
+    
+    <!--<br> self-closing tag allows to separate one line from another (can be used at the end of every line we wanna separate)-->
+    <br><br>
+
+    <!--CHECKBOXES-->
+    <!--it must be added type="checkbox" if we want to add a checkbox to our options provided-->
+    <label for="dog"><input id="dog" value="dog" type="checkbox" checked>Dog</label>
+    <label for="pizza"><input id="pizza" value="pizza" type="checkbox">Pizza</label>
+    <label for="viking"><input id="viking" value="viking" type="checkbox">Viking</label><br><br>
+
+    <!--TEXT & SEND BUTTON-->
+    <!--"placeholder" attribute helps to guide the user what to write. What "required" attribute does is that the field the user needs to fill out is mandatory-->
+    <label><input type="text" placeholder="URL from your dog's picture" required><br><br>
+    <button type="submit">Enviar</button>
+  </form>
+  </main>
+  <footer>
+    <!--<small> tag is used to literally small the text-->
+    <p><small>Copyright</small></p>
+  </footer>
+  </body>
+</html>

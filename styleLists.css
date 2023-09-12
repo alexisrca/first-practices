@@ -1,0 +1,27 @@
+.favorite-foods {
+    color: chocolate;
+}
+
+.places {
+    color: blueviolet;
+}
+
+ol {
+    color: green;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+.all-time-favorites {
+  font-family: 'Sedgwick Ave Display', cursive;
+}
+
+.todo {
+  font-family: 'Black Ops One', cursive;
+}
+
+.contenedor-lista {
+  background-color: silver;
+}
